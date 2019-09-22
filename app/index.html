@@ -1,0 +1,22 @@
+<html ng-app="autocompleteDemoInsideDialog">
+<head>
+  <meta charset="utf-8"/>
+  <script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+        <div>
+          <div ng-controller="DemoCtrl as ctrl" layout="column" ng-cloak>
+          <md-content class="md-padding">
+            <p>
+              Click the button below to open the dialog with an autocomplete.
+            </p>
+
+            <md-button ng-click="ctrl.openDialog($event)" class="md-raised">Open Dialog</md-button>
+          </md-content>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
